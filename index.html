@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">EMI Calculator</h1>
+        <div class="form">
+            <table>
+                <tr>
+                    <td class="one">Prinicipal Amount</td>
+                    <td>:</td>
+                    <td><input type="text" placeholder="Enter the Amount" id="p"></td>
+                </tr>
+    
+                <tr>
+                    <td  class="one">Rate of Interst</td>
+                    <td>:</td>
+                    <td><input type="text" placeholder="Enter the Interst" id="r"></td>
+                </tr>
+    
+                <tr>
+                    <td  class="one">Select Tenure</td>
+                    <td>:</td>
+                    <td><select id="ten">
+                        <option value="years">Years</option>
+                        <option value="Months">Months</option>
+    
+                    </select></td>
+                </tr>
+    
+                <tr>
+                    <td  class="one">Tenure Period</td>
+                    <td>:</td>
+                    <td><input type="text" placeholder="Enter the Tenure Period" id="t"></td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><button onclick="calc()" id="btn">Generate</button></td>
+                </tr>
+    
+                <tr>
+                    <td  class="one">EMI </td>
+                    <td>:</td>
+                    <td><input type="text" id="emi"></td>
+                </tr>
+    
+                <tr>
+                    <td  class="one">Interst Amount </td>
+                    <td>:</td>
+                    <td><input type="text" id="int"></td>
+                </tr>
+    
+                <tr>
+                    <td  class="one">Total Amount </td>
+                    <td>:</td>
+                    <td><input type="text" id="tot"></td>
+                </tr>
+            </table>
+        </div>
+       
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
